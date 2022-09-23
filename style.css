@@ -148,17 +148,31 @@ HIGHLIGHTS
 }
 
 #highlights::before {
-    background: url('assets/wave 2.svg');
+    background: url(assets/wave\ 2.svg);
     content: "";
     position: absolute;
     width: 101vw;
     height: 15vw;
-    top: -1px;
+    top: -5px;
     left: 0;
     z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotateX(180deg);
+    transform: translateY(100);
+}
+
+#highlights::after {
+    background: url(assets/wave\ 2.svg);
+    content: "";
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
     transform: translateY(-100);
 }
 
